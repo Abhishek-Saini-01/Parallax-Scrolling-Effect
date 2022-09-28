@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallex Scroll</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="./images/bg.jpg" id="bg">
+        <h2 id="text">Abhishek</h2>
+        <img src="./images/man.png" id="man">
+        <img src="./images/clouds_1.png" id="clouds_1">
+        <img src="./images/clouds_2.png" id="clouds_2">
+        <img src="./images/mountain_left.png" id="mountain_left">
+        <img src="./images/mountain_right.png" id="mountain_right">
+    </section>
+
+    <div class="extra">
+        <h2>Parallax Scroll is Awesome</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi fugit placeat? Dolorem ratione neque enim ex error, odit nisi asperiores, adipisci temporibus aliquid dignissimos aliquam. Placeat voluptatibus, veniam molestias quas molestiae officia! Aspernatur, similique eveniet officia inventore facilis aut ullam, dignissimos tempore natus adipisci fugit nostrum voluptatum ipsa doloremque. Temporibus dolorem inventore, maiores, nesciunt velit vel rem, ex similique quos commodi ut quisquam. Deserunt nisi odit nemo mollitia nesciunt est aliquid perspiciatis inventore ducimus tenetur a minima, sequi, architecto quidem necessitatibus sunt ad veniam assumenda quo? Delectus, cum laboriosam est dolore ut veritatis sequi voluptates harum ea quas quasi, voluptas atque nemo distinctio obcaecati mollitia quia reiciendis ipsa dicta aut maiores. Doloremque atque ut laborum quas excepturi dolores facilis saepe, commodi numquam? Temporibus id cum laudantium sunt perferendis perspiciatis voluptatibus, tempora vel consequuntur vitae deserunt in magni molestias, hic iure ab, odit asperiores fuga. Quas exercitationem, voluptate aut suscipit illum mollitia vitae dolor voluptatem ex tempora reprehenderit ad excepturi nam ipsam. Ipsam exercitationem explicabo veritatis velit vero corrupti molestias id repellat odit recusandae illum minima ducimus consequuntur modi eligendi eos quidem, molestiae unde. A, voluptas porro laboriosam suscipit quam pariatur. Ullam recusandae vel deserunt harum aliquid quo nihil adipisci.</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi fugit placeat? Dolorem ratione neque enim ex error, odit nisi asperiores, adipisci temporibus aliquid dignissimos aliquam. Placeat voluptatibus, veniam molestias quas molestiae officia! Aspernatur, similique eveniet officia inventore facilis aut ullam, dignissimos tempore natus adipisci fugit nostrum voluptatum ipsa doloremque. Temporibus dolorem inventore, maiores, nesciunt velit vel rem, ex similique quos commodi ut quisquam. Deserunt nisi odit nemo mollitia nesciunt est aliquid perspiciatis inventore ducimus tenetur a minima, sequi, architecto quidem necessitatibus sunt ad veniam assumenda quo? Delectus, cum laboriosam est dolore ut veritatis sequi voluptates harum ea quas quasi, voluptas atque nemo distinctio obcaecati mollitia quia reiciendis ipsa dicta aut maiores. Doloremque atque ut laborum quas excepturi dolores facilis saepe, commodi numquam? Temporibus id cum laudantium sunt perferendis perspiciatis voluptatibus, tempora vel consequuntur vitae deserunt in magni molestias, hic iure ab, odit asperiores fuga. Quas exercitationem, voluptate aut suscipit illum mollitia vitae dolor voluptatem ex tempora reprehenderit ad excepturi nam ipsam. Ipsam exercitationem explicabo veritatis velit vero corrupti molestias id repellat odit recusandae illum minima ducimus consequuntur modi eligendi eos quidem, molestiae unde. A, voluptas porro laboriosam suscipit quam pariatur. Ullam recusandae vel deserunt harum aliquid quo nihil adipisci.</p><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit excepturi fugit placeat? Dolorem ratione neque enim ex error, odit nisi asperiores, adipisci temporibus aliquid dignissimos aliquam. Placeat voluptatibus, veniam molestias quas molestiae officia! Aspernatur, similique eveniet officia inventore facilis aut ullam, dignissimos tempore natus adipisci fugit nostrum voluptatum ipsa doloremque. Temporibus dolorem inventore, maiores, nesciunt velit vel rem, ex similique quos commodi ut quisquam. Deserunt nisi odit nemo mollitia nesciunt est aliquid perspiciatis inventore ducimus tenetur a minima, sequi, architecto quidem necessitatibus sunt ad veniam assumenda quo? Delectus, cum laboriosam est dolore ut veritatis sequi voluptates harum ea quas quasi, voluptas atque nemo distinctio obcaecati mollitia quia reiciendis ipsa dicta aut maiores. Doloremque atque ut laborum quas excepturi dolores facilis saepe, commodi numquam? Temporibus id cum laudantium sunt perferendis perspiciatis voluptatibus, tempora vel consequuntur vitae deserunt in magni molestias, hic iure ab, odit asperiores fuga. Quas exercitationem, voluptate aut suscipit illum mollitia vitae dolor voluptatem ex tempora reprehenderit ad excepturi nam ipsam. Ipsam exercitationem explicabo veritatis velit vero corrupti molestias id repellat odit recusandae illum minima ducimus consequuntur modi eligendi eos quidem, molestiae unde. A, voluptas porro laboriosam suscipit quam pariatur. Ullam recusandae vel deserunt harum aliquid quo nihil adipisci.</p>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.to("#bg",{
+            scrollTrigger:{
+                scrub:1
+            },
+            scale:1.5
+        });
+        gsap.to("#man",{
+            scrollTrigger:{
+                scrub:1
+            },
+            scale:0.5
+        });
+        gsap.to("#mountain_left",{
+            scrollTrigger:{
+                scrub:1
+            },
+            x:-500,
+        });
+        gsap.to("#mountain_right",{
+            scrollTrigger:{
+                scrub:1
+            },
+            x:500,
+        });
+        gsap.to("#clouds_1",{
+            scrollTrigger:{
+                scrub:1
+            },
+            x:200,
+        });
+        gsap.to("#clouds_2",{
+            scrollTrigger:{
+                scrub:1
+            },
+            x:-200,
+        });
+        gsap.to("#text",{
+            scrollTrigger:{
+                scrub:1
+            },
+            y:500,
+            scale:0.9,
+        });
+    </script>
+</body>
+</html>
